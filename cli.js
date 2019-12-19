@@ -8,7 +8,7 @@ const reactFunctionalComponent = require('./templates/ReactFunctionalComponent')
 const cssFileTemplate = require('./templates/CssTemplate');
 const testFileTemplate = require('./templates/TestTemplate');
 
-program.version('0.0.1');
+program.version('1.0.2');
 
 let componentTemplate = '';
 let componentTemplateResult = '';
