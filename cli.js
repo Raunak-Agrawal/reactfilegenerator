@@ -59,7 +59,7 @@ program
     if (this.cssFile === 'y' || this.cssFile === 'Y') {
       componentTemplateResult = componentTemplateResult.replace(
         /\[import-css-file\]/g,
-        `import styles from './${this.componentName}.styles.${
+        `import styles from './${this.componentName}.module.${
           hasCssPrefix ? 'scss' : 'css'
         }'`
       );
@@ -124,7 +124,7 @@ program
       let cssFilename =
         directoryForFile +
         this.componentName +
-        `.styles.${hasCssPrefix ? 'scss' : 'css'}`;
+        `.module.${hasCssPrefix ? 'scss' : 'css'}`;
       fs.writeFile(cssFilename, cssTemplateResult, 'utf8', function(err) {
         if (err) return console.log(err);
         console.log(
