@@ -10,18 +10,18 @@ const reactFunctionalComponent = require('./templates/ReactFunctionalComponent')
 const cssFileTemplate = require('./templates/CssTemplate');
 const testFileTemplate = require('./templates/TestTemplate');
 
-program.version('1.0.5-alpha');
+program.version('1.0.6');
 
 let componentTemplate = '';
 let componentTemplateResult = '';
 let componentFileName = '';
 let cssTemplateResult = '';
 let testTemplateResult = '';
-let directoryForFile = path.resolve(__dirname);
+let directoryForFile = process.cwd();
 let hasCssPrefix = false;
 
-console.log(directoryForFile, 'directoryForFile');
-console.log(process.cwd(), 'process cwd');
+// console.log(directoryForFile, 'directoryForFile');
+// console.log(process.cwd(), 'process cwd');
 
 program
   .command('comp')
@@ -32,7 +32,7 @@ program
     'Component Type Class or Functional',
     'F'
   )
-  .option('-f, --folder [folder]', 'Folder [./]', './')
+  .option('-f, --folder [folder]', 'Folder [/]', '/')
   .option('-s, --cssFile [cssFile]', 'Create CSS [No]', 'No')
   .option('-p, --cssFilePrefix [type]', 'CSS Prefix [No]', 'No')
   .option('-t, --testFile [testFile]', 'Create Test file [No]', 'No')
@@ -102,7 +102,7 @@ program
 
     //build strings for directory and file outputs
     if (this.folder) {
-      directoryForFile = path.join(directoryForFile, this.folder, '/');
+      directoryForFile = path.join(directoryForFile, '/', this.folder, '/');
     }
 
     //Check for -f directory and create if doesn't exist
