@@ -1,6 +1,6 @@
 # reactfilegenerator
 
-A simple node js cli to build react js css and test file
+A simple node js cli to build react - .jsx, .(css | scss) and .test.js file
 
 ## Installation
 
@@ -81,7 +81,7 @@ I created this after getting frustrated with creating new files everytime I deci
 
 reactFileGenerator saves on repeated keystrokes, simplify project development and reduce the time required for creating a working app.
 
-By using this command line interface I was able to think about coding rather than think about syntax.'
+By using this command line interface I was able to think about coding rather than think about syntax.
 
 If you have suggestions for improvements, features or note any errors or corrections, please submit an issue or fork the repo and submit a pull request.
 
