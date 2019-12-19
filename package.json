@@ -1,6 +1,6 @@
 {
   "name": "reactfilegenerator",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A simple node js cli to build react js css and test file",
   "main": "cli.js",
   "scripts": {
