@@ -10,7 +10,7 @@ const reactFunctionalComponent = require('./templates/ReactFunctionalComponent')
 const cssFileTemplate = require('./templates/CssTemplate');
 const testFileTemplate = require('./templates/TestTemplate');
 
-program.version('1.0.5');
+program.version('1.0.5-alpha');
 
 let componentTemplate = '';
 let componentTemplateResult = '';
@@ -19,6 +19,9 @@ let cssTemplateResult = '';
 let testTemplateResult = '';
 let directoryForFile = path.resolve(__dirname);
 let hasCssPrefix = false;
+
+console.log(directoryForFile, 'directoryForFile');
+console.log(process.cwd(), 'process cwd');
 
 program
   .command('comp')
