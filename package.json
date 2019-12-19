@@ -10,7 +10,8 @@
   "keywords": [
     "react",
     "node",
-    "cli"
+    "cli",
+    "react file generator cli"
   ],
   "author": "Raunak Agrawal",
   "license": "MIT",
