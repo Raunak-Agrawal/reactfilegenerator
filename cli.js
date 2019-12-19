@@ -10,7 +10,7 @@ const reactFunctionalComponent = require('./templates/ReactFunctionalComponent')
 const cssFileTemplate = require('./templates/CssTemplate');
 const testFileTemplate = require('./templates/TestTemplate');
 
-program.version('1.0.4');
+program.version('1.0.5');
 
 let componentTemplate = '';
 let componentTemplateResult = '';
