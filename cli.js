@@ -1,6 +1,7 @@
 const program = require('commander');
 const fs = require('fs');
 const fx = require('mkdir-recursive');
+const path = require('path');
 
 const reactClassComponent = require('./templates/ReactClassComponent');
 const reactFunctionalComponent = require('./templates/ReactFunctionalComponent');
@@ -14,7 +15,7 @@ let componentTemplateResult = '';
 let componentFileName = '';
 let cssTemplateResult = '';
 let testTemplateResult = '';
-let directoryForFile = './';
+let directoryForFile = path.resolve(__dirname);
 let hasCssPrefix = false;
 
 program
@@ -96,7 +97,7 @@ program
 
     //build strings for directory and file outputs
     if (this.folder) {
-      directoryForFile += this.folder + '/';
+      directoryForFile = path.join(directoryForFile, this.folder, '/');
     }
 
     //Check for -f directory and create if doesn't exist
