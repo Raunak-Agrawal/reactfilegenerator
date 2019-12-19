@@ -1,10 +1,6 @@
 /* reactClassComponent Syntax */
-
-const reactClassComponent = `
-    import React, { Component } from 'react'
+const reactClassComponent = `import React, { Component } from 'react'
     import PropTypes from 'prop-types' //reactClassComponent
-
-
     [import-css-file]
 
     class [comp] extends Component {
@@ -28,7 +24,6 @@ const reactClassComponent = `
 
     };
 
-    export default [comp]
-`;
+    export default [comp]`;
 
 module.exports = reactClassComponent;

@@ -1,7 +1,5 @@
 /* reactFunctionalComponent Syntax */
-
-const reactFunctionalComponent = `
-    import React from 'react'
+const reactFunctionalComponent = `import React from 'react'
     import PropTypes from 'prop-types'
 
     [import-css-file]
@@ -18,7 +16,6 @@ const reactFunctionalComponent = `
 
     }
 
-    export default [comp]
-`;
+    export default [comp]`;
 
 module.exports = reactFunctionalComponent;
