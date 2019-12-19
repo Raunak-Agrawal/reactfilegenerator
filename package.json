@@ -1,0 +1,20 @@
+{
+  "name": "reactfilegenerator",
+  "version": "1.0.0",
+  "description": "A simple node js cli to build react js css and test file",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "cli"
+  ],
+  "author": "Raunak Agrawal",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^4.0.1",
+    "mkdir-recursive": "^0.4.0"
+  }
+}
