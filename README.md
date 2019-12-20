@@ -59,7 +59,7 @@ Creates a file in the working directory (Class Based Component option available 
     reactfilegenerator comp -c ComponentName -f src      /* Specifies output folder */
     reactfilegenerator comp -c ComponentName -s y        /* Creates matching CSS file */
     reactfilegenerator comp -c ComponentName -p y        /* Creates matching SCSS file */
-    reactfilegenerator comp -c ComponentName -s y -t y   /* Creates a test file configured with                                                                  react-testing library */
+    reactfilegenerator comp -c ComponentName -s y -t y   /* Creates a test file configured with react-testing library */
 
 The `-v` flag allows you to specify either Class Based or Functional Based Component syntax.
 Functional Based is the default if no version flag is used
